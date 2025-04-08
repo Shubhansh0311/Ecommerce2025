@@ -28,7 +28,9 @@ dotenv.config();
 app.use(express.json());
 
 app.get("/test",(req,res)=>{
-    res.send({message:"root working "})
+    console.log(req);
+    
+    res.json({message:"root working "})
 })
 
 // authentication
