@@ -16,7 +16,7 @@ import adminProductRouters from "./routes/adminProduct.routes.js";
 const app = express();
 
 const corsOptions = {
-    origin: 'https://ecommerce-eta-sandy.vercel.app/', // Your React app URL
+    origin: 'cd bae/', // Your React app URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
     credentials: true, // Include cookies in requests if needed
