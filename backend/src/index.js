@@ -27,6 +27,10 @@ app.use(cors(corsOptions));
 dotenv.config();
 app.use(express.json());
 
+app.get("/test",(req,res)=>{
+    res.send({message:"root working "})
+})
+
 // authentication
 app.use("/auth",authRouters.authRouter);
 
