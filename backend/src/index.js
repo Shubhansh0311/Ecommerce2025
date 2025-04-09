@@ -27,9 +27,9 @@ app.use(cors(corsOptions));
 dotenv.config();
 app.use(express.json());
 
-app.get("/test",(req,res)=>{
+app.get("/api/test",(req,res)=>{
     console.log(req);
-    
+
     res.json({message:"root working "})
 })
 
