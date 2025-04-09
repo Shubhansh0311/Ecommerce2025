@@ -22,8 +22,8 @@ const app = express();
 //     credentials: true, // Include cookies in requests if needed
 // };
 
-// app.options('*', cors(corsOptions)); // Handle preflight requests
-// app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // Handle preflight requests
+app.use(cors(corsOptions));
 dotenv.config();
 app.use(express.json());
 
