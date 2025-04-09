@@ -15,12 +15,12 @@ import adminProductRouters from "./routes/adminProduct.routes.js";
 
 const app = express();
 
-// const corsOptions = {
-//     origin: 'cd bae/', // Your React app URL
-//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS
-//     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-//     credentials: true, // Include cookies in requests if needed
-// };
+const corsOptions = {
+    origin: 'cd bae/', // Your React app URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    credentials: true, // Include cookies in requests if needed
+};
 
 app.options('*', cors(corsOptions)); // Handle preflight requests
 app.use(cors(corsOptions));
